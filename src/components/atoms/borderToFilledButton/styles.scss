@@ -1,0 +1,19 @@
+@import "../../common/styles.scss";
+
+.borderToFilledButton {
+  background-color: transparent;
+  border: 2px solid $APPLICATION_COLOR;
+  border-radius: 18px;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: $APPLICATION_COLOR;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color, 0.4s;
+  text-align: center;
+}
+
+.borderToFilledButton:hover {
+  background-color: $APPLICATION_COLOR;
+  color: white;
+}

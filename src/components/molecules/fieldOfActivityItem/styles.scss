@@ -1,0 +1,59 @@
+@import "../../common/styles.scss";
+
+.field-of-activity-item {
+  width: 350px;
+  padding: 70px 0px;
+  background-color: $WHITE_COLOR;
+  display: flex;
+  flex: 1;
+  align-self: flex-start;
+
+  @media screen and (max-width: 1450px) {
+    width: 450px;
+  }
+
+  @media screen and (max-width: 950px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 750px) {
+    width: 450px;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 100%;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0px;
+    margin-left: 0px;
+  }
+
+  p,
+  li {
+    text-align: center;
+    font-weight: 200;
+    font-size: 17px;
+    line-height: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  h2 {
+    text-align: center;
+    color: $GRAY_COLOR;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    margin-bottom: 0px;
+  }
+
+  h3 {
+    color: $APPLICATION_COLOR;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 17px;
+    font-weight: 400;
+  }
+}

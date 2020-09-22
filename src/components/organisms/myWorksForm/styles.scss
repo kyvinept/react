@@ -1,0 +1,31 @@
+@import "../../common/styles.scss";
+
+.my-works-form {
+  padding-top: 120px;
+  width: calc(100% - 50px);
+
+  h1,
+  p {
+    text-align: center;
+  }
+
+  p {
+    font-size: 19px;
+    font-weight: 200;
+    margin-bottom: 90px;
+  }
+
+  a {
+    cursor: pointer;
+    color: $APPLICATION_COLOR;
+    font-weight: 500;
+  }
+
+  .works {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    flex-direction: row;
+    flex-flow: row wrap;
+  }
+}

@@ -1,0 +1,17 @@
+export const avatar: string = require("../assets/images/avatar/avatar.png");
+export const avatarWhite: string = require("../assets/images/avatarWhite/avatarWhite.png");
+export const backgroundWork: string = require("../assets/images/backgroundWork/backgroundWork.jpeg");
+export const logo: string = require("../assets/images/logo/logo.png");
+export const mentor: string = require("../assets/images/mentor/mentor.png");
+export const technique: string = require("../assets/images/technique/technique.png");
+export const mailbox: string = require("../assets/images/mailbox/success.png");
+export const defaultProjectIcon: string = require("../assets/images/defaultProjectIcon/app.png");
+export const availableOnAppStore: string = require("../assets/images/availableOnAppStore/availableOnAppStore.png");
+export const availableOnGooglePlay: string = require("../assets/images/availableOnGooglePlay/availableOnGooglePlay.png");
+export const defaultProjectScreen: string = require("../assets/images/defaultProjectScreen/defaultProjectScreen.jpg");
+export const ru: string = require("../assets/images/countryFlags/russian/flag.png");
+export const en: string = require("../assets/images/countryFlags/unitedKingdom/flag.png");
+export const ios: string = require("../assets/images/ios/ios.png");
+export const reactnative: string = require("../assets/images/reactnative/reactnative.png");
+export const nodejs: string = require("../assets/images/nodejs/nodejs.png");
+export const web: string = require("../assets/images/web/web.png");

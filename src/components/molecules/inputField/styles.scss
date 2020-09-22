@@ -1,0 +1,31 @@
+@import "../../common/styles.scss";
+
+.input-field {
+  width: 100%;
+
+  p {
+    color: $INPUT_TITLE_GRAY_COLOR;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 8px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid $LIGHT_BORDER_COLOR;
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: 200;
+    padding: 10px;
+  }
+
+  textarea {
+    width: 660px;
+
+    @media screen and (max-width: 700px) {
+      width: 100%;
+    }
+  }
+}

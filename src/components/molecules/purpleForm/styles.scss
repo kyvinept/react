@@ -1,0 +1,48 @@
+@import "../../common/styles.scss";
+
+.purple-form {
+  background-color: $APPLICATION_COLOR;
+  padding-top: 70px;
+  width: 100%;
+  padding-bottom: 70px;
+
+  @media screen and (max-width: 500px) {
+    padding-top: 40px;
+  }
+
+  .text-form {
+    width: 800px;
+
+    @media screen and (max-width: 800px) {
+      width: calc(100% - 50px);
+    }
+
+    h2 {
+      font-size: 32px;
+
+      @media screen and (max-width: 500px) {
+        font-size: 25px;
+      }
+    }
+
+    p {
+      font-size: 22px;
+      font-weight: 200;
+      line-height: 30px;
+
+      @media screen and (max-width: 500px) {
+        font-size: 18px;
+      }
+    }
+
+    h2,
+    p {
+      text-align: center;
+      color: $WHITE_COLOR;
+    }
+  }
+}
+
+.long-purple-form {
+  padding-bottom: 300px;
+}

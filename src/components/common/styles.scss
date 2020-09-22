@@ -1,0 +1,14 @@
+$APPLICATION_COLOR: #7510f7;
+$GRAY_COLOR: #141c3a;
+$INPUT_TITLE_GRAY_COLOR: rgba(41, 51, 71, 0.65);
+$LIGHT_BORDER_COLOR: #e6ecf8;
+$WHITE_COLOR: white;
+$LIGHT_GREY_COLOR: lightgray;
+$BLUR_BACKGROUND_COLOR: rgba(0, 0, 0, 0.7);
+
+.center-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

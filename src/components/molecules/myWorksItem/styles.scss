@@ -1,0 +1,40 @@
+@import "../../common/styles.scss";
+
+.my-works-item {
+  cursor: pointer;
+  width: 400px;
+  height: 250px;
+  background-image: url(../../../assets/images/backgroundWork/backgroundWork.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  margin: 20px;
+
+  .hover-component {
+    display: flex;
+    flex: 1;
+    background-color: none;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s;
+
+    p {
+      visibility: hidden;
+      margin: 0;
+      color: $WHITE_COLOR;
+      font-size: 25px;
+      font-weight: 600;
+    }
+  }
+
+  .hover-component:hover {
+    background-color: $BLUR_BACKGROUND_COLOR;
+
+    p {
+      visibility: visible;
+    }
+  }
+}

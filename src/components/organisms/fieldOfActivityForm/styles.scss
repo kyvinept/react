@@ -1,0 +1,54 @@
+@import "../../common/styles.scss";
+
+.field-of-activity-form {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid $LIGHT_GREY_COLOR;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-top: -200px;
+
+  @media screen and (max-width: 1450px) {
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 950px) {
+    width: calc(100% - 50px);
+  }
+
+  @media screen and (max-width: 750px) {
+    width: auto;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: calc(100% - 50px);
+  }
+
+  .column {
+    display: flex;
+    flex-direction: row;
+
+    @media screen and (max-width: 750px) {
+      flex-direction: column;
+    }
+  }
+
+  .horizontal-spacer,
+  .horizontal-spacer-between-columns {
+    width: 1px;
+    height: auto;
+    background-color: $LIGHT_GREY_COLOR;
+
+    @media screen and (max-width: 750px) {
+      width: auto;
+      height: 1px;
+    }
+  }
+
+  .horizontal-spacer-between-columns {
+    @media screen and (max-width: 1450px) {
+      width: auto;
+      height: 1px;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@import "../../common/styles.scss";
+
+.textButton {
+  background-color: transparent;
+  font-size: 16px;
+  color: $GRAY_COLOR;
+  font-weight: 200;
+  cursor: pointer;
+  transition: color, 0.4s;
+}
+
+.textButton:hover {
+  color: $APPLICATION_COLOR;
+}

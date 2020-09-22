@@ -1,0 +1,51 @@
+@import "../../common/styles.scss";
+
+.contact-form {
+  width: 700px;
+  margin-bottom: 100px;
+
+  @media screen and (max-width: 750px) {
+    width: calc(100% - 50px);
+  }
+
+  h1 {
+    font-size: 48px;
+    font-weight: 300;
+    margin-bottom: 50px;
+    width: 900px;
+    text-align: center;
+    color: $GRAY_COLOR;
+    max-width: 100%;
+    margin-left: 25px;
+    margin-right: 25px;
+
+    @media screen and (max-width: 750px) {
+      font-size: 35px;
+    }
+  }
+
+  .top-input {
+    display: flex;
+    flex-direction: row;
+
+    @media screen and (max-width: 700px) {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+
+  .bottom-input {
+    @media screen and (max-width: 700px) {
+      width: 100%;
+    }
+  }
+
+  .spacer-for-text-input-fields {
+    width: 20px;
+    height: 20px;
+  }
+
+  .big-spacer {
+    height: 60px;
+  }
+}

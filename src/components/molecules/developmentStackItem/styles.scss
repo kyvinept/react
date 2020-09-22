@@ -1,0 +1,15 @@
+@import "../../common/styles.scss";
+
+.development-stack-item {
+  width: 300px;
+
+  h4,
+  p {
+    font-size: 16px;
+  }
+
+  p {
+    font-weight: 200;
+    margin-top: -10px;
+  }
+}
