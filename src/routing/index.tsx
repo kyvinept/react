@@ -2,7 +2,7 @@ import React from "react";
 import Home from "../screens/home";
 import Contact from "../screens/contact";
 import NotFound from "../screens/notFound";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router, Route } from "react-router-dom";
 import { Switch } from "react-router";
 import { Page } from "../services/NavigationManager";
 import Requests from "../screens/requests";
