@@ -27,7 +27,7 @@ export default {
   IwriteclearnativecodetocreategreatappsforAppleplatform:
     "I write clear native code to create great apps for Apple platform.",
   Description:
-    "Я начал свой путь в роли iOS разработчика. Я работал в большой компании и выполнял проекты, начиная с небольших в маленькой команде на несколько человек, так и больших, в которых было около 30 человек. В дальнейшем выучил Java Script, чтобы дальше совершенствоваться в мобильной разработке и выучил React Native. Я люблю совершенствоваться и постоянно учу что-то новое. Так я выучил React и Node JS, чтобы работать над проектами собственаручно. Фриланс проекты позволили мне набраться комерческого опыта с данными технологии и совершенствоваться в них.",
+    "I started my journey as an iOS developer. I worked in a large company and carried out projects, starting with small ones in a small team for a few people, and large ones, in which there were about 30 people. Later I learned Java Script to further improve my mobile development and learned React Native. I love to improve and am constantly learning something new. This is how I learned React and Node JS so that I could work on projects myself. Freelance projects allowed me to gain commercial experience with technology data and improve in them.",
   HiImVladNicetomeetyou: "Hi, I’m Vlad. Nice to meet you.",
   IcodebeautifulthingsandIlovewhatIdo:
     "I code beautiful things, and I love what I do.",

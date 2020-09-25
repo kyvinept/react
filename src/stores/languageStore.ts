@@ -2,18 +2,27 @@ import { action, decorate, observable } from "mobx";
 import { Lang } from "../models/Lang";
 import Strings from "../translations";
 import Localization from "react-localization";
+import localStorageService, { DataType } from "../services/LocalStorageService";
 
 type OnChangeLanguageCallback = (newLang: Lang) => void;
 
 export class LanguageStore {
   private onChangeLanguageCallbacks: OnChangeLanguageCallback[] = [];
 
-  lang = Lang.en;
+  lang: Lang;
   strings = Strings.en;
 
   constructor() {
-    const rl = new Localization(Strings);
-    this.setLanguage(rl.getLanguage() as Lang);
+    const storageLang = localStorageService.get(DataType.lang) as Lang;
+
+    if (storageLang) {
+      this.lang = storageLang;
+    } else {
+      const rl = new Localization(Strings);
+      this.lang = rl.getLanguage() as Lang;
+    }
+
+    this.setLanguage(this.lang);
   }
 
   setOnChangeLanguageCallback = (callback: OnChangeLanguageCallback) => {
@@ -22,6 +31,7 @@ export class LanguageStore {
 
   setLanguage = (lang: Lang) => {
     this.lang = lang;
+    localStorageService.save(lang, DataType.lang);
 
     switch (lang) {
       case Lang.ru:
