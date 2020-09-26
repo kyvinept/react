@@ -1,5 +1,5 @@
 export class URLType {
-  static server = "https://kyvinept-nodejs.glitch.me/api";
+  static server = "https://cryptic-plains-40071.herokuapp.com/api";
 }
 
 export enum RequestType {
