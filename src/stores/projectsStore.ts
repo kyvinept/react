@@ -26,7 +26,7 @@ export class ProjectsStore extends ContainerStore {
       .then((projects) => {
         this.projects = projects;
       })
-      .then(() => {
+      .finally(() => {
         this.loading = undefined;
       });
   };

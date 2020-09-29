@@ -25,9 +25,7 @@ export class ProjectStore extends ContainerStore {
         this.project = project;
       })
       .finally(() => {
-        setTimeout(() => {
-          this.loading = undefined;
-        }, 1000);
+        this.loading = undefined;
       });
   };
 }
