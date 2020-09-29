@@ -3,16 +3,19 @@ import { Lang } from "../models/Lang";
 import Strings from "../translations";
 import Localization from "react-localization";
 import localStorageService, { DataType } from "../services/LocalStorageService";
+import { ContainerStore } from "./containerStore";
 
 type OnChangeLanguageCallback = (newLang: Lang) => void;
 
-export class LanguageStore {
+export class LanguageStore extends ContainerStore {
   private onChangeLanguageCallbacks: OnChangeLanguageCallback[] = [];
 
   lang: Lang;
   strings = Strings.en;
 
   constructor() {
+    super();
+
     const storageLang = localStorageService.get(DataType.lang) as Lang;
 
     if (storageLang) {
@@ -27,6 +30,12 @@ export class LanguageStore {
 
   setOnChangeLanguageCallback = (callback: OnChangeLanguageCallback) => {
     this.onChangeLanguageCallbacks.push(callback);
+  };
+
+  removeOnChangeLanguageCallback = (callback: OnChangeLanguageCallback) => {
+    this.onChangeLanguageCallbacks = this.onChangeLanguageCallbacks.filter(
+      (item) => item != callback
+    );
   };
 
   setLanguage = (lang: Lang) => {

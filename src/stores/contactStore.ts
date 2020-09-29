@@ -6,8 +6,9 @@ import NavigationManager, {
   NavigationType,
   Page,
 } from "../services/NavigationManager";
+import { ContainerStore } from "./containerStore";
 
-export class ContactStore {
+export class ContactStore extends ContainerStore {
   private contactAPIService = new ContactAPIService();
 
   sendRequestModel: SendRequestModel = {

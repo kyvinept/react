@@ -14,6 +14,8 @@ export default {
   DevTools: "Инструменты разработчика:",
   ReactDeveloper: "React Разработчик",
   NodeJSDeveloper: "Node JS Разработчик",
+  Loading: "Загрузка...",
+  Translating: "Перевод...",
   Databases: "Базы данных:",
   TechnologyIuse: "Используемые технологии:",
   IdevelopasimpleBackendpartformybeatifulwebandmobileapps:

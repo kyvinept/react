@@ -9,6 +9,10 @@ import NavigationManager, {
 } from "../../../services/NavigationManager";
 import Stores from "../../../stores";
 import { ProjectShort } from "../../../models/ProjectModel";
+import Loader from "../loader";
+import { LoaderType } from "../../../stores/containerStore";
+
+const LOADER_SIZE = 160;
 
 const MyWorksForm = () => {
   const projectsStore = Stores.projectsStore;
@@ -48,6 +52,9 @@ const MyWorksForm = () => {
         {projectsStore.projects.map((item) => {
           return renderMyWorkItem(item);
         })}
+        {projectsStore.loading != undefined && (
+          <Loader type={LoaderType.loading} size={LOADER_SIZE} />
+        )}
       </div>
     </div>
   ));

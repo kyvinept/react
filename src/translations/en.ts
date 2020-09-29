@@ -20,6 +20,8 @@ export default {
   Databases: "Databases:",
   NodeJSDeveloper: "Node JS Developer",
   TechnologyIuse: "Technology I use:",
+  Loading: "Loading...",
+  Translating: "Translating...",
   Iliketocodethingsfromscratchandenjoybringingideastolifeinthebrowser:
     "I like to code things from scratch, and enjoy bringing ideas to life in the browser.",
   IuseReactNativefordevelopingcrossplatformappsIadjustedtocustomersrequeststosavemoneyforcreatingasimpleapp:

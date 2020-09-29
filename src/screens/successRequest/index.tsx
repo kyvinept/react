@@ -5,8 +5,12 @@ import "../../components/common/styles.scss";
 import SuccessRequestForm from "../../components/organisms/successRequestForm";
 import useWindowDimensions from "../../helpers/useWindowDimensions";
 
+const TITLE = "Vladislav | Submission Success";
+
 const SuccessRequest = () => {
   const { height, width } = useWindowDimensions();
+
+  document.title = TITLE;
 
   return useObserver(() => (
     <div className={"success-request"} style={{ height, width }}>

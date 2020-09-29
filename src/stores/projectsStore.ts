@@ -3,9 +3,10 @@ import { action, decorate, observable } from "mobx";
 import { Lang } from "../models/Lang";
 import { ProjectShort } from "../models/ProjectModel";
 import ProjectsAPIService from "../services/API/ProjectAPIService/ProjectAPIService";
+import { ContainerStore, LoaderType } from "./containerStore";
 import { LanguageStore } from "./languageStore";
 
-export class ProjectsStore {
+export class ProjectsStore extends ContainerStore {
   private languageStoreInstance?: LanguageStore;
   private projectsAPIService = new ProjectsAPIService();
 
@@ -16,11 +17,18 @@ export class ProjectsStore {
   }
 
   getProjects = () => {
+    this.loading = LoaderType.loading;
+
     const lang = this.languageStoreInstance?.lang || Lang.en;
 
-    this.projectsAPIService.getProjects(lang).then((projects) => {
-      this.projects = projects;
-    });
+    this.projectsAPIService
+      .getProjects(lang)
+      .then((projects) => {
+        this.projects = projects;
+      })
+      .then(() => {
+        this.loading = undefined;
+      });
   };
 }
 
@@ -29,6 +37,7 @@ export default projectsStore;
 
 decorate(ProjectsStore, {
   projects: observable,
+  loading: observable,
 
   getProjects: action,
 });

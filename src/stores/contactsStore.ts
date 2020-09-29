@@ -2,8 +2,9 @@ import { access } from "fs";
 import { action, decorate, observable } from "mobx";
 import { RequestModel } from "../models/RequestModel";
 import ContactAPIService from "../services/API/ContactAPIService/ContactAPIService";
+import { ContainerStore } from "./containerStore";
 
-export class ContactsStore {
+export class ContactsStore extends ContainerStore {
   private contactAPIService = new ContactAPIService();
 
   requests: RequestModel[] = [];
