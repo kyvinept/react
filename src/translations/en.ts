@@ -32,13 +32,13 @@ export default {
   IwriteclearnativecodetocreategreatappsforAppleplatform:
     "I write clear native code to create great apps for Apple platform.",
   Description:
-    "I started my journey as an iOS developer. I worked in a large company and carried out projects, starting with small ones in a small team for a few people, and large ones, in which there were about 30 people. Later I learned Java Script to further improve my mobile development and learned React Native. I love to improve and am constantly learning something new. This is how I learned React and Node JS so that I could work on projects myself. Freelance projects allowed me to gain commercial experience with technology data and improve in them.",
+    "I have started working as an iOS developer. I have worked in a large company and have worked on projects from small ones in a small team (about a few people) and large ones (about 30 people). Later I have learned Java Script to improve my skills in mobile development and have learned React Native. I love to advance and to learn something new. I have learned React and Node JS for working on projects by myself. Freelance projects allowed me to gain commercial experience with this technology and improve in this.",
   HiImVladNicetomeetyou: "Hi, I’m Vlad. Nice to meet you.",
   IcodebeautifulthingsandIlovewhatIdo:
-    "I code beautiful things, and I love what I do.",
+    "I code great things, and I love what I do.",
   FrontendBackendandMobileDeveloper: "Front-end, Back-end and Mobile Developer",
   HereareafewdesignprojectsIveworkedonrecentlyWanttoseemore:
-    "Here are a few design projects I've worked on recently. Want to see more?  ",
+    "Here are a few projects I've worked on recently. Want to see more?  ",
   AppFeatures: "App Features",
   Illbeintouchwithyoushortly: "I'll be in touch with you shortly.",
   Backtohome: "Back to home",

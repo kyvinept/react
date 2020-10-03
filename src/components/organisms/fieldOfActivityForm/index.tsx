@@ -88,48 +88,6 @@ const FieldOfActivityForm = () => {
           ]}
         />
       </div>
-      {/* <div className={"horizontal-spacer"} />
-      <FieldOfActivityItem
-        image={Images.mentor}
-        title={"Front-end Developer"}
-        text={
-          "I like to code things from scratch, and enjoy bringing ideas to life in the browser."
-        }
-        subtitle={"Languages I speak:"}
-        subtext={"HTML, Pug, Slim, CSS, Sass, Less"}
-        toolsTitle={"Dev Tools:"}
-        tools={[
-          "Atom",
-          "Bitbucket",
-          "Bootstrap",
-          "Bulma",
-          "Codekit",
-          "Codepen",
-          "Github",
-          "Gitlab",
-          "Terminal",
-        ]}
-      />
-      <div className={"horizontal-spacer"} />
-      <FieldOfActivityItem
-        image={Images.mentor}
-        title={"Mentor"}
-        text={
-          "I genuinely care about people, and love helping fellow designers work on their craft."
-        }
-        subtitle={"Experiences I draw from:"}
-        subtext={"UX/UI, Product design, Freelancing"}
-        toolsTitle={"Mentor Stats:"}
-        tools={[
-          "5 years experience",
-          "26 short courses",
-          "42 bootcamps",
-          "125+ students",
-          "1,400+ mentor sessions",
-          "60+ group critiques",
-          "12,000+ comments",
-        ]}
-      /> */}
     </div>
   ));
 };
