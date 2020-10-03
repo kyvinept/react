@@ -15,3 +15,4 @@ export const ios: string = require("../assets/images/ios/ios.png");
 export const reactnative: string = require("../assets/images/reactnative/reactnative.png");
 export const nodejs: string = require("../assets/images/nodejs/nodejs.png");
 export const web: string = require("../assets/images/web/web.png");
+export const robot: string = require("../assets/images/robot/robot.png");

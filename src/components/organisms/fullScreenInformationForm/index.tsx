@@ -2,18 +2,21 @@ import React from "react";
 import { useObserver } from "mobx-react";
 import "./styles.scss";
 import "../../common/styles.scss";
-import { Images } from "../../../styles";
-import Stores from "../../../stores";
 import BordereToFilledButton from "../../atoms/borderToFilledButton";
+import Fade from "react-reveal/Fade";
 import NavigationManager, {
   NavigationType,
   Page,
 } from "../../../services/NavigationManager";
-import Fade from "react-reveal/Fade";
+import Stores from "../../../stores";
 
-export interface SuccessRequestFormProps {}
+export interface FullScreenInformationFormProps {
+  image: string;
+  title: string;
+  description: string;
+}
 
-const SuccessRequestForm = (props: SuccessRequestFormProps) => {
+const FullScreenInformationForm = (props: FullScreenInformationFormProps) => {
   const languageStore = Stores.languageStore;
 
   const onPressBackToHomeButton = () => {
@@ -21,11 +24,11 @@ const SuccessRequestForm = (props: SuccessRequestFormProps) => {
   };
 
   return useObserver(() => (
-    <div className={"success-request-form center-style"}>
-      <img height={200} src={Images.mailbox} />
+    <div className={"full-screen-information-form center-style"}>
+      <img height={200} src={props.image} />
       <Fade bottom cascade>
-        <h1>{languageStore.strings.MessageReceivedThanks}</h1>
-        <p>{languageStore.strings.Illbeintouchwithyoushortly}</p>
+        <h1>{props.title}</h1>
+        <p>{props.description}</p>
       </Fade>
       <BordereToFilledButton
         text={languageStore.strings.Backtohome}
@@ -36,4 +39,4 @@ const SuccessRequestForm = (props: SuccessRequestFormProps) => {
   ));
 };
 
-export default SuccessRequestForm;
+export default FullScreenInformationForm;

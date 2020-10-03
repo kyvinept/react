@@ -15,7 +15,7 @@ interface ProjectProps {
   id: string;
 }
 
-const LOADER_SIZE = 350;
+const LOADER_SIZE = 250;
 
 const Project = (props: RouteComponentProps<ProjectProps>) => {
   const projectStore = Stores.projectStore;

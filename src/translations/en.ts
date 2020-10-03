@@ -21,6 +21,9 @@ export default {
   NodeJSDeveloper: "Node JS Developer",
   TechnologyIuse: "Technology I use:",
   Loading: "Loading...",
+  error404: "404 error",
+  Thisisntthedroidorpageyourelookingfor:
+    "This isn't the droid (or page) you're looking for.",
   Translating: "Translating...",
   Iliketocodethingsfromscratchandenjoybringingideastolifeinthebrowser:
     "I like to code things from scratch, and enjoy bringing ideas to life in the browser.",

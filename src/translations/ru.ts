@@ -16,6 +16,9 @@ export default {
   NodeJSDeveloper: "Node JS Разработчик",
   Loading: "Загрузка...",
   Translating: "Перевод...",
+  error404: "404 ошибка",
+  Thisisntthedroidorpageyourelookingfor:
+    "Это не тот робот (или страница), которого вы ищете.",
   Databases: "Базы данных:",
   TechnologyIuse: "Используемые технологии:",
   IdevelopasimpleBackendpartformybeatifulwebandmobileapps:
