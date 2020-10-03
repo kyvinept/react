@@ -3,6 +3,7 @@ export interface ProjectShort {
   image_url: string;
   title: string;
   date: Date;
+  type: 'mobile' | 'web';
 }
 
 export interface AppFeature {
@@ -26,6 +27,7 @@ export interface DevelopmentStack {
 
 export interface ProjectModel {
   id: string;
+  type: 'mobile' | 'web';
   main_image_url: string;
   appstore_link?: string;
   google_play_link?: string;

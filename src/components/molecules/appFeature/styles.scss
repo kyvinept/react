@@ -33,7 +33,10 @@
       object-position: right;
       align-self: flex-end;
       height: auto;
-      box-shadow: 0 0 10px $BLACK_COLOR_WITH_OPACITY; /* Параметры тени */
+    }
+
+    .shadow {
+      box-shadow: 0 0 10px $BLACK_COLOR_WITH_OPACITY;
       padding: 2px;
     }
   }

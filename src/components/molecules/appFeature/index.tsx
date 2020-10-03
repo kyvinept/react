@@ -9,6 +9,7 @@ export interface AppFeatureProps {
   imageUrl?: string;
   title?: string;
   description?: string;
+  needShadow?: boolean;
 }
 
 const AppFeature = (props: AppFeatureProps) => {
@@ -18,7 +19,7 @@ const AppFeature = (props: AppFeatureProps) => {
     >
       <div className={"left-part"}>
         <Fade {...(props.reverse ? { right: true } : { left: true })}>
-          <img src={props.imageUrl} />
+          <img className={props.needShadow ? "shadow" : ""} src={props.imageUrl} />
         </Fade>
       </div>
 

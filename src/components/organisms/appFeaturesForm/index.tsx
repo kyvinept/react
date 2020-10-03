@@ -20,6 +20,7 @@ const AppFeaturesForm = () => {
             description={item.description}
             imageUrl={item.image_url}
             reverse={index % 2 == 1}
+            needShadow={projectStore.project?.type == 'web'}
           />
         );
       })}
