@@ -26,7 +26,7 @@ const FullScreenInformationForm = (props: FullScreenInformationFormProps) => {
   return useObserver(() => (
     <div className={"full-screen-information-form center-style"}>
       <img height={200} src={props.image} />
-      <Fade bottom cascade>
+      <Fade bottom>
         <h1>{props.title}</h1>
         <p>{props.description}</p>
       </Fade>

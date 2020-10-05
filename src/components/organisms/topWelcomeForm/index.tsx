@@ -11,7 +11,7 @@ const TopWelcomeForm = () => {
 
   return useObserver(() => (
     <div className={"top-welcome-form center-style"}>
-      <Fade bottom cascade>
+      <Fade bottom>
         <h1>{languageStore.strings.FrontendBackendandMobileDeveloper}</h1>
         <p>{languageStore.strings.IcodebeautifulthingsandIlovewhatIdo}</p>
       </Fade>

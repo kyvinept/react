@@ -13,7 +13,7 @@ const ContactForm = () => {
 
   return useObserver(() => (
     <div className={"contact-form center-style"}>
-      <Fade bottom cascade>
+      <Fade bottom>
         <h1>
           {
             languageStore.strings
