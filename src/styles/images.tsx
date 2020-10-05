@@ -16,3 +16,5 @@ export const reactnative: string = require("../assets/images/reactnative/reactna
 export const nodejs: string = require("../assets/images/nodejs/nodejs.png");
 export const web: string = require("../assets/images/web/web.png");
 export const robot: string = require("../assets/images/robot/robot.png");
+export const webIcon: string = require("../assets/images/webIcon/webIcon.png");
+export const mobileIcon: string = require("../assets/images/mobileIcon/mobileIcon.png");

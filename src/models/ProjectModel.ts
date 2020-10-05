@@ -1,9 +1,13 @@
+import { type } from "os";
+
+export type ProjectType = 'mobile' | 'web';
+
 export interface ProjectShort {
   id: string;
   image_url: string;
   title: string;
   date: Date;
-  type: 'mobile' | 'web';
+  type: ProjectType;
 }
 
 export interface AppFeature {
@@ -27,7 +31,7 @@ export interface DevelopmentStack {
 
 export interface ProjectModel {
   id: string;
-  type: 'mobile' | 'web';
+  type: ProjectType;
   main_image_url: string;
   appstore_link?: string;
   google_play_link?: string;

@@ -29,6 +29,7 @@ const MyWorksForm = () => {
       <MyWorksItem
         title={item.title}
         imageUrl={item.image_url}
+        type={item.type}
         onPress={onPress}
       />
     );

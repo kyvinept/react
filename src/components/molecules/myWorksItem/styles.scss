@@ -2,6 +2,7 @@
 
 .my-works-item {
   cursor: pointer;
+  position: relative;
   width: 400px;
   height: 250px;
   background-image: url(../../../assets/images/backgroundWork/backgroundWork.jpeg);
@@ -12,6 +13,14 @@
   overflow: hidden;
   display: flex;
   margin: 20px;
+
+  img {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+  }
 
   .hover-component {
     display: flex;
